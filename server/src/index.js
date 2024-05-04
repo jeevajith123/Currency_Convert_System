@@ -18,8 +18,8 @@ app.get("/convert", async (req, res) => {
   const { date, sourceCurrency, targetCurrency, amountInSourceCurrency } =
     req.query;
 
-  const currencyURL = `https://openexchangerates.org/api/historical/${date}.json?app_id=${process.env.APP_ID}`;
-  const namesURl = `https://openexchangerates.org/api/currencies.json?app_id=${process.env.APP_ID}`;
+  const currencyURL = `https://openexchangerates.org/api/historical/${date}.json?app_id=56b3c67066e64c23a58da5ab32febc05`;
+  const namesURl = `https://openexchangerates.org/api/currencies.json?app_id=$56b3c67066e64c23a58da5ab32febc05`;
   try {
     const response = await axios.get(currencyURL);
     const data = response.data;
